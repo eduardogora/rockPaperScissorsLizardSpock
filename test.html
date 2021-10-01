@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="test.css">
+  <link href="https://fonts.google.com/specimen/Barlow+Semi+Condensed" rel="stylesheet">
+  
+  <title>Rock, Paper, Scissors</title>
+
+</head>
+<body onload="test()">
+  <div  class="puntaje">
+    <div class="columnLogo">
+      <img src="./images/logo-bonus.svg">
+    </div>
+    <div class="columnScore">
+      <div class=" scoreBox">
+        <p class="score">SCORE</p>
+        <p class="scoreNumber" id="score">0</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="contenedor">
+    <div class="userColumn">
+        <div id="userPick">
+            <div id="whiteCircle">
+              <img src="" class="imagen" id="user" onclick="handleClick(id)">
+            </div>
+        </div>
+        <p class="userPick">YOU PICKED</p>
+      </div>
+      <div class="computerColumn">
+        <div id="computerPick">
+            <div id="whiteCircle">
+                <img src=""  id="pc" class="imagen contenedor" onclick="handleClick(id)">
+            </div>
+        </div>
+        <p class="housePick">THE HOUSE PICKED</p>
+      </div>
+  </div>
+  
+  <div>
+    <p class="textWin" id="result"></p>
+    <button class="playAgainButton" onclick="returnMainPage()">PLAY AGAIN</button>
+    <button class="rulesBox" onclick="openPopup()">RULES</button>
+  </div>
+  <div class="modal" id="modal">
+    <img src="./images/icon-close.svg" class="closeButton" onclick="closePopup()" id="cerrar">
+    <img src="./images/image-rules-bonus.svg" class="contenido">
+  </div>
+  <script src="./test.js"></script>
+    </div>
+</body>
+</html>

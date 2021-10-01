@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.google.com/specimen/Barlow+Semi+Condensed" rel="stylesheet">
+  
+  <title>Rock, Paper, Scissors</title>
+
+</head>
+<body onload="onDeploy()">
+  <div  class="puntaje">
+    <div class="columnLogo">
+      <img src="./images/logo-bonus.svg">
+    </div>
+    <div class="columnScore">
+      <div class=" scoreBox">
+        <p class="score">SCORE</p>
+        <p class="scoreNumber" id="score">0</p>
+      </div>
+    </div>
+  </div>
+  
+  <div  class = "contenedor">
+    <img src="./images/bg-pentagon.svg" class="fondo">
+    <div id="orangeCircle" >
+      <div id="whiteCircle">
+        <img src="./images/icon-scissors.svg" class="imagen" id="scissors" onclick="handleClick(id)">
+      </div>
+      <div id="cyanCircle" >
+        <div id="whiteCircle">
+          <img src="./images/icon-spock.svg" class="imagen" id="spock" onclick="handleClick(id)">
+        </div>
+        <div id="blueCircle" >
+          <div id="whiteCircle">
+            <img src="./images/icon-paper.svg" class="imagen" id="paper" onclick="handleClick(id)">
+          </div>
+          <div id="purpleCircle" >
+            <div id="whiteCircle">
+              <img src="./images/icon-lizard.svg" class="imagen" id="lizard" onclick="handleClick(id)">
+            </div>
+            <div id="redCircle" >
+              <div id="whiteCircle">
+                <img src="./images/icon-rock.svg" class="imagen" id="rock" onclick="handleClick(id)">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <button class="rulesBox" onclick="openPopup()">RULES</button>
+  </div>
+  <div class="modal" id="modal">
+    <img src="./images/icon-close.svg" class="closeButton" onclick="closePopup()" id="cerrar">
+    <img src="./images/image-rules-bonus.svg" class="contenido">
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
